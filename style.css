@@ -1,0 +1,116 @@
+body {
+  background-color: #000;
+}
+
+.logo-animated-wrap {
+  /* display: none; */
+}
+
+
+/* .home #rev_slider_1_1_wrapper */
+
+.logo-animate-ready {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  bottom: 0;
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo-animated {
+  stroke: #fff;
+  stroke-width: 10px;
+  fill: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo-animated {
+    transform: scale(1.3);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo-animated {
+    transform: scale(1.5);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-animated {
+    transform: scale(2);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo-animated {
+    transform: scale(2.6);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo-animated {
+    transform: scale(2.6);
+  }
+}
+
+.letter--r {
+  stroke-dasharray: 716.1072387695312;
+  stroke-dashoffset: 716.1072387695312;
+  animation: offset 2s ease-in forwards;
+}
+
+.letter--a {
+  stroke-dasharray: 744.1542358398438;
+  stroke-dashoffset: 744.1542358398438;
+  animation: offset 2s ease-in forwards;
+}
+
+.letter--r2 {
+  stroke-dasharray: 716.1072387695312;
+  stroke-dashoffset: 716.1072387695312;
+  animation: offset 1.8s ease-in forwards;
+}
+
+.letter--e {
+  stroke-dasharray: 589.8628540039062;
+  stroke-dashoffset: 589.8628540039062;
+  animation: offset 2s ease-in forwards;
+}
+
+.line--r-down {
+  stroke-dasharray: 1832.5377197265625;
+  stroke-dashoffset: 1832.5377197265625;
+  animation: offset 2s ease-in 1s forwards;
+}
+
+.line--r-start {
+  stroke-dasharray: 1503.2135009765625;
+  stroke-dashoffset: 1503.2135009765625;
+  animation: offset 2.2s ease-in 0.8s forwards;
+}
+
+.line--r-left {
+  stroke-dasharray: 170.34715270996094;
+  stroke-dashoffset: 170.34715270996094;
+  animation: offset 2s ease-in forwards;
+}
+
+.line--r-end {
+  stroke-dasharray: 1734.1304931640625;
+  stroke-dashoffset: 1734.1304931640625;
+  animation: offset 1.6s ease-in 1.2s forwards;
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
